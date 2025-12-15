@@ -1,9 +1,26 @@
 {
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./core/static/css/input.css -o ./core/static/css/output.css --watch"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.9"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.1"
+    "prisma": "^6.5.0"
   }
 }
-
